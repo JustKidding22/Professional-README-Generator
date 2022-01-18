@@ -90,6 +90,30 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "contributing",
+    message: "How can others contribute to this project?",
+    validate: (contributionInput) => {
+      if (contributionInput) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "What are the tests written for the application?",
+    validate: (testsInput) => {
+      if (testsInput) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
 ];
 
 // TODO: Create a function to write README file
