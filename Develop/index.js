@@ -114,6 +114,25 @@ const questions = [
       }
     },
   },
+  {
+    type: "confirm",
+    name: "confirmLicenses",
+    message: "Would you like to include a license?",
+    default: false,
+  },
+  {
+    type: "list",
+    name: "licenses",
+    message: "What license would you like to include?",
+    choices: ["MIT", "GPL", "CC--0"],
+    when: ({ confirmLicenses }) => {
+      if (confirmLicenses) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
 ];
 
 // TODO: Create a function to write README file
