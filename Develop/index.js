@@ -66,6 +66,30 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "installation",
+    message: "Enter the instructions for installation:",
+    validate: (installationInput) => {
+      if (installationInput) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "Enter the Instructions for usage:",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
 ];
 
 // TODO: Create a function to write README file
