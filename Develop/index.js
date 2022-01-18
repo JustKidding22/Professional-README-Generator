@@ -4,7 +4,20 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./generateMd.js");
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+  {
+    type: "input",
+    name: "name",
+    message: "Enter Your Name:",
+    validate: (nameInput) => {
+      if (nameInput) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
