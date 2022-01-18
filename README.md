@@ -15,8 +15,9 @@ Simple Node.js program that create a professional README.md layout. Powered by i
 
 ## ScreenShots
 
-![frontPage](Develop/assets/images/ScreenShot.jpg)
-[Video Demo](/https://www.youtube.com/watch?v=5_kPpuk8kuU/)
+![frontPage](/assets/images/ScreenShot.jpg)
+
+[Video Demo](https://www.youtube.com/watch?v=5_kPpuk8kuU)
 
 ## User Story :
 
