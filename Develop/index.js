@@ -41,6 +41,31 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "title",
+    message: "Enter Project Title:",
+    validate: (titleInput) => {
+      if (titleInput) {
+        return true;
+      } else {
+        console.log("Project must have a title!");
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "description",
+    message: "Enter Project Description:",
+    validate: (descriptionInput) => {
+      if (descriptionInput) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
 ];
 
 // TODO: Create a function to write README file
